@@ -19,6 +19,8 @@ fx <-getFX(Currencies = "EUR/TRY",from="2021-12-01", to="2022-02-01")
 
 fx <-getFX(Currencies = "USD/TRY",from="2021-12-01", to="2022-02-01")
 
+
+
 #plotting together
-plot(USDTRY, ylim = c(10,20))
+plot(USDTRY, ylim = c(10,20), main = "USDTRY vs. EURTRY")
 lines(EURTRY, col = "red", lwd = 2)
