@@ -10,3 +10,15 @@ library(quantmod)
 fx <-getFX(Currencies = "EUR/USD",from="2021-12-01", to="2022-02-01")
 
 plot(EURUSD)
+
+
+
+#one example for Turkey- Shock in December 
+
+fx <-getFX(Currencies = "EUR/TRY",from="2021-12-01", to="2022-02-01")
+
+fx <-getFX(Currencies = "USD/TRY",from="2021-12-01", to="2022-02-01")
+
+#plotting together
+plot(USDTRY, ylim = c(10,20))
+lines(EURTRY, col = "red", lwd = 2)
