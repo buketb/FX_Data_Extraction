@@ -1,0 +1,12 @@
+#quantmod data
+#fast FX data extraction
+
+library(quantmod)
+
+
+##################################
+
+#get Fx from quantmod:
+fx <-getFX(Currencies = "EUR/USD",from="2021-12-01", to="2022-02-01")
+
+plot(EURUSD)
